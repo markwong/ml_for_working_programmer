@@ -34,3 +34,15 @@ fun superior(King, Peer _) = true
   | superior _ = false
 
 
+(* Introducing Enumeration types *)
+datatype degree = Duke | Marquis | Earl | Viscount | Baron
+
+
+fun lady Duke = "Duchess"
+  | lady Marquis = "Marchioness"
+  | lady Earl = "Countess"
+  | lady Viscount = "Viscountess"
+  | lady Baron = "Baroness"
+
+
+
